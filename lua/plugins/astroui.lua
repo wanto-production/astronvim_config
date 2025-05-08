@@ -10,8 +10,11 @@ return {
     priority = 1000,
     lazy = false,
     config = function()
+      -- Mengonfigurasi Catppuccin dengan transparansi dan sedikit gelap
       require("catppuccin").setup {
-        transparent_background = true,
+        flavour = "macchiato", -- Pilih "macchiato" untuk sedikit lebih gelap
+        transparent_background = true, -- Mengaktifkan transparansi background
+        term_colors = true, -- Sinkronkan warna terminal dengan Neovim
       }
     end,
   },
