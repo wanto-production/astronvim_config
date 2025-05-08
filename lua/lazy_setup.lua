@@ -11,16 +11,6 @@ require("lazy").setup({
       update_notifications = true, -- Enable/disable notification about running `:Lazy update` twice to update pinned plugins
     },
     config = function()
-      require("neo-tree").setup {
-        filesystem = {
-          filtered_items = {
-            visible = true, -- 👈 Menampilkan file tersembunyi
-            hide_dotfiles = false, -- 👈 Menampilkan file diawali titik (dotfiles)
-            hide_gitignored = false, -- 👈 Menampilkan file yang di-ignore Git
-          },
-        },
-      }
-
       require("toggleterm").setup {
         open_mapping = [[<C-t>]],
         direction = "float",
@@ -40,6 +30,7 @@ require("lazy").setup({
   },
   { import = "community" },
   { import = "plugins" },
+  { import = "plugins.ui" },
 } --[[@as LazySpec]], {
   -- Configure any other `lazy.nvim` configuration options here
   install = { colorscheme = { "astrotheme", "habamax" } },
