@@ -14,7 +14,7 @@ return {
         source_selector = {
           winbar = true,
           statusline = true,
-          truncation_character = ".",
+          truncation_character = "@",
         },
         filesystem = {
           follow_current_file = { enabled = true },
