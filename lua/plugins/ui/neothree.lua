@@ -10,11 +10,7 @@ return {
     },
     config = function()
       require("neo-tree").setup {
-        git_status = {
-          enabled = true,
-          show_untracked = true,
-          refresh_when_shell_is_idle = true, -- ⬅️ Tambahkan ini
-        },
+        git_status_async = true,
         filesystem = {
           follow_current_file = { enabled = true },
           use_libuv_file_watcher = true, -- ⬅️ ini bagian penting
