@@ -11,6 +11,11 @@ return {
     config = function()
       require("neo-tree").setup {
         git_status_async = true,
+        source_selector = {
+          winbar = true,
+          statusline = true,
+          truncation_character = ".",
+        },
         filesystem = {
           follow_current_file = { enabled = true },
           use_libuv_file_watcher = true, -- ⬅️ ini bagian penting
