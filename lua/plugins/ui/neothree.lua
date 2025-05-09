@@ -11,6 +11,8 @@ return {
     config = function()
       require("neo-tree").setup {
         filesystem = {
+          follow_current_file = { enabled = true },
+          use_libuv_file_watcher = true, -- ⬅️ ini bagian penting
           filtered_items = {
             visible = true, -- 👈 Menampilkan file tersembunyi
             hide_dotfiles = false, -- 👈 Menampilkan file diawali titik (dotfiles)
