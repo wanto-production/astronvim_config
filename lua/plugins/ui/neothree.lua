@@ -21,6 +21,11 @@ return {
           statusline = true,
           truncation_character = "@",
         },
+        git_status = {
+          follow_current_file = true,
+          show_all = true,
+          timeout = 500,
+        },
         filesystem = {
           follow_current_file = { enabled = true },
           use_libuv_file_watcher = true, -- ⬅️ ini bagian penting
