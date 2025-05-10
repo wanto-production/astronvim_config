@@ -11,6 +11,11 @@ return {
     config = function()
       require("neo-tree").setup {
         git_status_async = true,
+        sources = {
+          "filesystem",
+          "buffers",
+          "git_status", -- ini akan menampilkan status git dan branch aktif
+        },
         source_selector = {
           winbar = true,
           statusline = true,
