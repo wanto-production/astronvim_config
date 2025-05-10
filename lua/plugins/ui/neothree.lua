@@ -19,7 +19,7 @@ return {
         source_selector = {
           winbar = true,
           statusline = true,
-          truncation_character = "@",
+          truncation_character = "...",
         },
         git_status = {
           follow_current_file = true,
