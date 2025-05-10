@@ -11,6 +11,5 @@ return {
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.cs-omnisharp" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.pack.tailwindcss" },
   -- import/override with your plugins folder
 }
